@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+![cover_image](https://user-images.githubusercontent.com/26163704/123705104-63556b80-d85e-11eb-9ce1-2a2c99f593b3.jpg)
 
-You can use the [editor on GitHub](https://github.com/sorchanicconmara/airbnb_ireland/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# THIS is what affects Ireland's Airbnb prices
+#### An Analysis of Ireland's Airbnb Listings Data and How YOU Can Use It To Your Advantage
+---
+##### Author: Sorcha Nic Conmara | June 2021
+---
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this article, I will dicuss my findings from analysing Airbnb data on listings in Ireland. The [data from Ireland](http://insideairbnb.com/get-the-data.html) is free to access and was scraped from the Airbnb website in March, 2021. The data dictionary can be accessed [here](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=982310896).
 
-### Markdown
+#### What is Airbnb?
+> Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more > than 100,000 cities and 220 countries worldwide and has millions of hosts and travellers using it.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In Ireland, as of March 2021, there were over **26,000 listings**
+and that number is growing as more and more people realise what a great opportunity it is to make some extra cash. In this blog post, I will reveal some of the key insights I discovered from analysing the Airbnb listings data for Ireland.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+My first question was a simple one:
+> 1. **Where in Ireland are Airbnbs the most expensive?** 
 
-- Bulleted
-- List
+To my surpise, the most expensive listings based on average listing price were in County Louth. This however seemed odd, and upon investigating the distribution of AirBnBs, we can see that they are not equally distributed across Ireland and therefore the average price isn't a fair representation to group by. Any county with fewer listings (such as Louth), only needed one very expensive listing to pull its mean listing price up. 
 
-1. Numbered
-2. List
+When comparing this with the listing price grouped by the median (the middle price, when price is ordered), we can see a more realistic overview of Airbnb prices in Ireland.
 
-**Bold** and _Italic_ and `Code` text
+2. **What counties have the fewest AirBnBs and could be areas potential hosts may consider listing a property in? Also, what kind of rooms are most popular in Ireland? (and therefore be considered by potential hosts)**
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+3. **What features affect the price of the listing? And to what extent? I.e. what do YOU need in your Airbnb to increase its value.** 
+E.g.:
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sorchanicconmara/airbnb_ireland/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ - does being a superhost/the hosts tenure affect price?
+ - does the number of bedrooms/bathrooms affect price? 
+ - does the number of reviews/overall review score rating affect price?
+    
+    
+4. **Can the price of a listing be predicted? What are the most influential features in predicting price?**
