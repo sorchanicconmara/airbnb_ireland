@@ -101,7 +101,7 @@ This seemed odd, and upon investigating the distribution of Airbnbs,we can see t
 
 <br/>
 
-<img src ="blog_images/price_dist_irl.png" width=100%> 
+<img src ="blog_images/price_dist_irl.png" width="100%"> 
 
 <figcaption>Fig.4 - Airbnb Listing Price Distribution </figcaption><br/>
 
@@ -138,7 +138,7 @@ I was surprised to learn that for Ireland, a superhost status doesn't make much 
 ``Superhost = 1 indicates host is a Superhost``
 
 <br/>
-<img align = "left" src="blog_images/sup_host.png" width="40%">
+<img src="blog_images/sup_host.png" width="100%">
 
 <figcaption>Fig.7 - Price Distribution (Superhost vs Non-Superhost) </figcaption><br/>
 
