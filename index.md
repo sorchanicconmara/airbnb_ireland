@@ -19,7 +19,7 @@ out their homes with people who are looking for accommodations in that
 locale. It currently covers more than 100,000 cities and 220 countries 
 worldwide and has millions of hosts and travellers using it."
 
-<img src = "blog_images/airbnb.png" width=100%>
+<img src = "blog_images/airbnb.png" width="100%">
 
 <figcaption>Fig.1 - Airbnb logo</figcaption><br/>
 
@@ -109,7 +109,7 @@ This seemed odd, and upon investigating the distribution of Airbnbs,we can see t
 
 When comparing this with the listing price grouped by the median (the middle price, when price is ordered), we can see a slightly more realistic overview of Airbnb prices in Ireland. However, to my surprise, Louth has the 2nd most expensive median Airbnb listing price. Also, something else very surprising is that **South Dublin was the cheapest when listing prices were grouped by their median**. 
 
-<img src="blog_images/price_median.png" width=100%> <br/>
+<img src="blog_images/price_median.png" width="100%"> <br/>
 
 <figcaption>Fig.5 - Median Listing Price per Council </figcaption><br/>
 
@@ -138,7 +138,7 @@ I was surprised to learn that for Ireland, a superhost status doesn't make much 
 ``Superhost = 1 indicates host is a Superhost``
 
 <br/>
-<img align = "left" src="blog_images/sup_host.png" width=40%>
+<img align = "left" src="blog_images/sup_host.png" width="40%">
 
 <figcaption>Fig.7 - Price Distribution (Superhost vs Non-Superhost) </figcaption><br/>
 
@@ -147,7 +147,7 @@ I assumed that people would likely expect to pay more to stay in a superhost's l
 in Ireland - which is encouraging as a consumer or a potential host! <br/>
 
 <br/>
-<img align = "center" src="blog_images/sup_host2.png" width=100%>
+<img align = "center" src="blog_images/sup_host2.png" width="100%">
 
 <figcaption>Fig.8 - Review Score Rating Distribution (Superhost vs Non-Superhost) </figcaption><br/>
 
@@ -195,7 +195,7 @@ While there doesn't seem to be a strong relationship between review score rating
 
 I trained a basic linear regression model to investigate the most impactful features when it came to affecting the relative price of a listing. I won't bore you with the model details as that is not the purpose of this blog post. However, I will share with you my findings. <br/>
 
-<img src="blog_images/hostver_impact.png)
+<img src="blog_images/hostver_impact.png">
 
 <figcaption>Fig.12 - Host Verification Impact on Predicted Price </figcaption><br/>
 
@@ -204,7 +204,7 @@ Host verification, especially the type of host verification used had a strong im
 
 We unfortunately can't yet understand this relationship completely as a description of the host verification values is not available to us.
 
-<img src="blog_images/region_impact.png><br/>
+<img src="blog_images/region_impact.png"><br/>
 
 <figcaption>Fig.13 - Region Impact on Predicted Price</figcaption><br/>
 
