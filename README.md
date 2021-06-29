@@ -25,23 +25,24 @@ E.g.:
 4. **Can the price of a listing be predicted? This could be used by hosts when listing to determine what to charge for the listing.**
 
 ### Libraries used:
-seaborn==0.11.0
-scikit-learn==0.23.2
-pandas==1.2.4
-numpy==1.19.1
-matplotlib==3.3.1
+- seaborn==0.11.0
+- scikit-learn==0.23.2
+- pandas==1.2.4
+- numpy==1.19.1
+- matplotlib==3.3.1
 
 
 This project was created as part of the Udacity Data Scientist Nanodegree program.
 
-###File Structure:
+### File Structure:
 
-- Project1_airbnb_data_ireland.ipynb - Jupyter Notebook containing EDA, data cleaning, visualisations and linear regression model.
-- raw_data/
+- **Project1_airbnb_data_ireland.ipynb** - Jupyter Notebook containing EDA, data cleaning, visualisations and linear regression model.
+
+- **raw_data/**
     listings.csv.gz -  raw AirBnB data for Ireland from March 2021.
     listings.csv -  unzipped raw AirBnB data for Ireland from March 2021.
 
-###Summary of Results:
+### Summary of Results:
 
 1. **Where in Ireland is the mean/median price for an AirBnB the most expensive?** 
 
