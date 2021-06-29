@@ -11,7 +11,7 @@ Brief Analysis of listings data for AirBnB in Ireland from March 2021. Includes 
 3. **What features affect the price of the listing? And to what extent?** 
 E.g.:
 
- - does being a superhost/the hosts tenure affect price?
+ - does being a superhost/the hosts review rating score affect price?
  - does the number of bedrooms/bathrooms affect price? 
  - does the number of reviews/days since last review/average overall review score affect price?
     
