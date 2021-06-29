@@ -19,7 +19,7 @@ out their homes with people who are looking for accommodations in that
 locale. It currently covers more than 100,000 cities and 220 countries 
 worldwide and has millions of hosts and travellers using it."
 
-<img src = "https://user-images.githubusercontent.com/26163704/123764879-1eaced00-d8bd-11eb-815a-827e5b4fe96d.png" width=100%>
+<img src = "blog_images/airbnb.png" width=100%>
 
 <figcaption>Fig.1 - Airbnb logo</figcaption><br/>
 
@@ -41,7 +41,7 @@ were in County Louth. Leitrim, for example, is the county with the
 smallest population in the country, yet it had the 4th most expensive
 average listing price. 
 
-<img src="https://user-images.githubusercontent.com/26163704/123715043-69a01380-d86f-11eb-86aa-aa12f3cda10d.png">
+<img src="blog_images/price_mean.png">
 
 <figcaption>Fig.2 - Mean Listing Price per Council</figcaption><br/>
 
@@ -101,7 +101,7 @@ This seemed odd, and upon investigating the distribution of Airbnbs,we can see t
 
 <br/>
 
-<img src ="https://user-images.githubusercontent.com/26163704/123715070-77ee2f80-d86f-11eb-92a8-bc8da946be13.png" width=100%> 
+<img src ="blog_images/price_dist_irl.png" width=100%> 
 
 <figcaption>Fig.4 - Airbnb Listing Price Distribution </figcaption><br/>
 
@@ -109,7 +109,7 @@ This seemed odd, and upon investigating the distribution of Airbnbs,we can see t
 
 When comparing this with the listing price grouped by the median (the middle price, when price is ordered), we can see a slightly more realistic overview of Airbnb prices in Ireland. However, to my surprise, Louth has the 2nd most expensive median Airbnb listing price. Also, something else very surprising is that **South Dublin was the cheapest when listing prices were grouped by their median**. 
 
-<img src="https://user-images.githubusercontent.com/26163704/123714511-5b052c80-d86e-11eb-8637-e94b08445979.png" width=100%> <br/>
+<img src="blog_images/price_median.png" width=100%> <br/>
 
 <figcaption>Fig.5 - Median Listing Price per Council </figcaption><br/>
 
@@ -121,7 +121,7 @@ It seems that region definitely has a part to play in determining listing price 
 
 If you're considering becoming an Airbnb host, you might want to **consider hosting in Longford, Monaghan or Offaly.** These are the three regions with the fewest Airbnbs in Ireland and are therefore an investment opportunity, especially considering how popular Airbnb is becoming.
 
-![property_type](https://user-images.githubusercontent.com/26163704/123715073-7c1a4d00-d86f-11eb-8836-9996b97067f7.png)
+<img src="blog_images/property_type.png">
 
 <figcaption>Fig.6 - Top 10 Property Types - Ireland </figcaption> <br/>
 
@@ -138,7 +138,7 @@ I was surprised to learn that for Ireland, a superhost status doesn't make much 
 ``Superhost = 1 indicates host is a Superhost``
 
 <br/>
-<img align = "left" src="https://user-images.githubusercontent.com/26163704/123717052-f0ef8600-d873-11eb-8614-9f37ea7951a6.png" width=40%>
+<img align = "left" src="blog_images/sup_host.png" width=40%>
 
 <figcaption>Fig.7 - Price Distribution (Superhost vs Non-Superhost) </figcaption><br/>
 
@@ -147,14 +147,14 @@ I assumed that people would likely expect to pay more to stay in a superhost's l
 in Ireland - which is encouraging as a consumer or a potential host! <br/>
 
 <br/>
-<img align = "center" src="https://user-images.githubusercontent.com/26163704/123717060-f351e000-d873-11eb-8474-5b1b793596e2.png" width=100%>
+<img align = "center" src="blog_images/sup_host2.png" width=100%>
 
 <figcaption>Fig.8 - Review Score Rating Distribution (Superhost vs Non-Superhost) </figcaption><br/>
 
 <br/>
 <br/>
 
-![bed_bath_vs_price](https://user-images.githubusercontent.com/26163704/123717532-f5686e80-d874-11eb-9a94-6fc542bb0819.png)
+<img src="blog_images/bed_bath_vs_price.png">
 
 <figcaption>Fig.9 - Do Bedrooms and Bathrooms affect price? </figcaption><br/>
 
@@ -163,7 +163,7 @@ in Ireland - which is encouraging as a consumer or a potential host! <br/>
 As expected, the number of bedrooms and bathrooms does seem to impact the price. However, as you can see from Fig. 10, it is not always a  straight-forward increase in median price.<br/>
 
 
-<img align="center" src="https://user-images.githubusercontent.com/26163704/123717562-031df400-d875-11eb-94ed-5ee2fb6e8b39.png" width="100%">
+<img align="center" src="blog_images/bedrooms_vs_median_price.png" width="100%">
 
 <figcaption>Fig.10 - Do Bedrooms affect median listing price? </figcaption><br/>
 
@@ -171,7 +171,7 @@ As expected, the number of bedrooms and bathrooms does seem to impact the price.
 Interestingly, the median price for 7 bedroom listing is a lot lower than the median price for a 6 bed listing therefore it could be worth your while to filter by a range of bedrooms when browsing on Airbnb.<br/>
 
 <br/>
-<img align= "left" src="https://user-images.githubusercontent.com/26163704/123717595-116c1000-d875-11eb-90c6-73524af646b8.png">
+<img align= "left" src="blog_images/reviews_vs_price.png">
 
 <figcaption>Fig.11 - Number of Reviews Last 3- Days/Review Score Rating vs Median Listing Price </figcaption><br/>
  
@@ -195,7 +195,7 @@ While there doesn't seem to be a strong relationship between review score rating
 
 I trained a basic linear regression model to investigate the most impactful features when it came to affecting the relative price of a listing. I won't bore you with the model details as that is not the purpose of this blog post. However, I will share with you my findings. <br/>
 
-![hostver_impact](https://user-images.githubusercontent.com/26163704/123717675-39f40a00-d875-11eb-879f-653ed3164b66.png)
+<img src="blog_images/hostver_impact.png)
 
 <figcaption>Fig.12 - Host Verification Impact on Predicted Price </figcaption><br/>
 
@@ -204,7 +204,7 @@ Host verification, especially the type of host verification used had a strong im
 
 We unfortunately can't yet understand this relationship completely as a description of the host verification values is not available to us.
 
-![region_impact](https://user-images.githubusercontent.com/26163704/123717677-3bbdcd80-d875-11eb-83f0-0a3b7f76ca7e.png)<br/>
+<img src="blog_images/region_impact.png><br/>
 
 <figcaption>Fig.13 - Region Impact on Predicted Price</figcaption><br/>
 
