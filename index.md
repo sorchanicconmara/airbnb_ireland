@@ -8,16 +8,10 @@
 #### Author: Sorcha Nic Conmara | June 2021
 
 
-In this blog post, I will discuss my findings from analysing Airbnb data 
-on listings in Ireland. The [data from Ireland](http://insideairbnb.com/get-the-data.html) 
-is free to access and was scraped from the Airbnb website in March 2021.
-The data dictionary can be accessed [here](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=982310896).
+In this blog post, I will discuss my findings from analysing Airbnb data on listings in Ireland. The [data from Ireland](http://insideairbnb.com/get-the-data.html) is free to access and was scraped from the Airbnb website in March 2021. The data dictionary can be accessed [here](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=982310896).
 
 #### What is Airbnb?
-> "Airbnb is an online marketplace that connects people who want to rent
-out their homes with people who are looking for accommodations in that
-locale. It currently covers more than 100,000 cities and 220 countries 
-worldwide and has millions of hosts and travellers using it."
+> "Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more than 100,000 cities and 220 countries worldwide and has millions of hosts and travellers using it."
 
 <img src = "blog_images/airbnb.png" width="100%">
 
@@ -25,21 +19,14 @@ worldwide and has millions of hosts and travellers using it."
 
 <br/>
 
-In Ireland, as of March 2021, there were over **26,000 listings** and that number is growing as more and more people realise what a **great opportunity it is to make some extra cash**. The COVID-19 pandemic also caused a surge in Airbnb bookings as overseas travel was restricted and ***'the staycation'*** became more popular.
+In Ireland, as of March 2021, there were over **26,000 listings** and that number is growing as more and more people realise what a **great opportunity it is to make some extra cash**. The COVID-19 pandemic also caused a surge in Airbnb bookings as overseas travel was restricted and ***'the staycation'***  became more popular.
 
-In this blog post, I will reveal some key insights I discovered 
-from analysing the Airbnb listings data for Ireland. You will get an 
-insight into topics such as what the most and least expensive regions 
-are and what contributes to listing price - i.e. what you can *avoid* 
-as a consumer but *capitalise on* as a host!
+In this blog post, I will reveal some key insights I discovered from analysing the Airbnb listings data for Ireland. You will get an insight into topics such as what the most and least expensive regions are and what contributes to listing price - i.e. what you can *avoid* as a consumer but *capitalise on* as a host!
 
 ### My first question was a simple one:
 > 1. **Where in Ireland are Airbnb the most expensive?** 
 
-To my surprise, the most expensive listings based on average listing price
-were in County Louth. Leitrim, for example, is the county with the 
-smallest population in the country, yet it had the 4th most expensive
-average listing price. 
+To my surprise, the most expensive listings based on average listing price were in County Louth. Leitrim, for example, is the county with the  smallest population in the country, yet it had the 4th most expensive average listing price. 
 
 <img src="blog_images/price_mean.png">
 
@@ -174,21 +161,12 @@ Interestingly, the median price for 7 bedroom listing is a lot lower than the me
 <img align= "left" src="blog_images/reviews_vs_price.png">
 
 <figcaption>Fig.11 - Number of Reviews Last 3- Days/Review Score Rating vs Median Listing Price </figcaption><br/>
- 
- <br/>
+
 While there doesn't seem to be a strong relationship between review score rating/number of reviews in the last 30 days and the median price, we can clearly see a pattern in terms of superhosts having higher review score ratings than non-superhosts. We also see the message from Fig.8 echoed here again when looking at the distribution of review score ratings.
 
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-
 ### My final question was as follows:
 
 > 4. **Can the price of a listing be predicted? What are the most influential features in predicting price?**
