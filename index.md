@@ -1,115 +1,247 @@
 ![cover_image](https://user-images.githubusercontent.com/26163704/123705104-63556b80-d85e-11eb-9ce1-2a2c99f593b3.jpg)
 
-# THIS is what affects Ireland's Airbnb prices
+# THIS is affecting Ireland's Airbnb prices
 #### An Analysis of Ireland's Airbnb Listings Data and How YOU Can Use It To Your Advantage
----
-##### Author: Sorcha Nic Conmara | June 2021
+
 ---
 
-In this article, I will dicuss my findings from analysing Airbnb data on listings in Ireland. The [data from Ireland](http://insideairbnb.com/get-the-data.html) is free to access and was scraped from the Airbnb website in March, 2021. The data dictionary can be accessed [here](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=982310896).
+#### Author: Sorcha Nic Conmara | June 2021
+
+
+In this blog post, I will discuss my findings from analysing Airbnb data 
+on listings in Ireland. The [data from Ireland](http://insideairbnb.com/get-the-data.html) 
+is free to access and was scraped from the Airbnb website in March 2021.
+The data dictionary can be accessed [here](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=982310896).
 
 #### What is Airbnb?
-> Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It currently covers more than 100,000 cities and 220 countries worldwide and has millions of hosts and travellers using it.
+> "Airbnb is an online marketplace that connects people who want to rent
+out their homes with people who are looking for accommodations in that
+locale. It currently covers more than 100,000 cities and 220 countries 
+worldwide and has millions of hosts and travellers using it."
 
-In Ireland, as of March 2021, there were over **26,000 listings**
-and that number is growing as more and more people realise what a **great opportunity it is to make some extra cash**. In this blog post, I will reveal some of the key insights I discovered from analysing the Airbnb listings data for Ireland.
+<img src = "https://user-images.githubusercontent.com/26163704/123764879-1eaced00-d8bd-11eb-815a-827e5b4fe96d.png" width=100%>
 
+<figcaption>Fig.1 - Airbnb logo</figcaption><br/>
 
-My first question was a simple one:
-> 1. **Where in Ireland are Airbnbs the most expensive?** 
+<br/>
 
-To my surpise, the most expensive listings based on average listing price were in County Louth. Leitrim, for example, is the county with the smallest population in the country yet it had the 4th most expensive average listing price. 
+In Ireland, as of March 2021, there were over **26,000 listings** and that number is growing as more and more people realise what a **great opportunity it is to make some extra cash**. The COVID-19 pandemic also caused a surge in Airbnb bookings as overseas travel was restricted and ***'the staycation'*** became more popular.
+
+In this blog post, I will reveal some key insights I discovered 
+from analysing the Airbnb listings data for Ireland. You will get an 
+insight into topics such as what the most and least expensive regions 
+are and what contributes to listing price - i.e. what you can *avoid* 
+as a consumer but *capitalise on* as a host!
+
+### My first question was a simple one:
+> 1. **Where in Ireland are Airbnb the most expensive?** 
+
+To my surprise, the most expensive listings based on average listing price
+were in County Louth. Leitrim, for example, is the county with the 
+smallest population in the country, yet it had the 4th most expensive
+average listing price. 
+
 <img src="https://user-images.githubusercontent.com/26163704/123715043-69a01380-d86f-11eb-86aa-aa12f3cda10d.png">
 
-This seemed odd, and upon investigating the distribution of AirBnBs, we can see that they are not equally distributed across Ireland and also the price distribution is skewed. Therefore, the average price isn't a fair representation to group by. Any county with fewer listings (such as Louth), only needed one very expensive listing to pull its mean listing price up, which is likely what happened. 
+<figcaption>Fig.2 - Mean Listing Price per Council</figcaption><br/>
 
-<img src ="https://user-images.githubusercontent.com/26163704/123715070-77ee2f80-d86f-11eb-92a8-bc8da946be13.png" align="right" width = 45%> 
-<table class="tg">
+<br/>
+This seemed odd, and upon investigating the distribution of Airbnbs,we can see that they are not equally distributed across Ireland and also the price distribution is skewed. Therefore, **the average price isn't a fair representation** to group by. Any county with fewer listings (such as Louth), only needed one very expensive listing to pull its  mean listing price up, which is likely what happened. <br/>
+
+<br/>
+<table align="center">
 <thead>
   <tr>
-    <th class="tg-dvpl">region_parent_name</th>
-    <th class="tg-0pky">number of listings</th>
+    <th>region_parent_name</th>
+    <th>number of listings</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-dvpl">Dublin   City Council</td>
-    <td class="tg-dvpl">5889</td>
+    <td>Dublin   City Council</td>
+    <td>5889</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Kerry   County Council</td>
-    <td class="tg-dvpl">2841</td>
+    <td>Kerry   County Council</td>
+    <td>2841</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Donegal   County Council</td>
-    <td class="tg-dvpl">1971</td>
+    <td>Donegal   County Council</td>
+    <td>1971</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Cork   County Council</td>
-    <td class="tg-dvpl">1801</td>
+    <td>Cork   County Council</td>
+    <td>1801</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">...</td>
-    <td class="tg-dvpl">...</td>
+    <td>...</td>
+    <td>...</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Laois   County Council</td>
-    <td class="tg-dvpl">163</td>
+    <td>Laois   County Council</td>
+    <td>163</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Offaly   County Council</td>
-    <td class="tg-dvpl">139</td>
+    <td>Offaly   County Council</td>
+    <td>139</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Monaghan   County Council</td>
-    <td class="tg-dvpl">132</td>
+    <td>Monaghan   County Council</td>
+    <td>132</td>
   </tr>
   <tr>
-    <td class="tg-dvpl">Longford   County Council</td>
-    <td class="tg-dvpl">60</td>
+    <td>Longford   County Council</td>
+    <td>60</td>
   </tr>
 </tbody>
 </table> <br/>
 
 
-When comparing this with the listing price grouped by the median (the middle price, when price is ordered), we can see a slightly more realistic overview of Airbnb prices in Ireland. However, to my surprise, Louth has the 2nd most expensive median Airbnb listing prices. Also very surprising is that South Dublin was the cheapest when listing prices were grouped by median.
+<figcaption>Fig.3 - Listings Count per Council (Snapshot) </figcaption><br/>
 
-<img align="left" src="https://user-images.githubusercontent.com/26163704/123714511-5b052c80-d86e-11eb-8637-e94b08445979.png" width="45%"> <br/>
+<br/>
 
-My second question was related to the growth of Airbnb:
-> 2. **What counties have the fewest AirBnBs and could be areas potential hosts may consider listing a property in? Also, what kind of rooms are most popular in Ireland? (and therefore be considered by potential hosts)**
+<img src ="https://user-images.githubusercontent.com/26163704/123715070-77ee2f80-d86f-11eb-92a8-bc8da946be13.png" width=100%> 
 
-If you're considering becoming an Airbnb host, you might want to consider hosting in Longford, Monaghan or Offaly. These are the three regions with the fewest Airbnbs in Ireland and are therefore an investment opportunity, especially considering how popular Airbnbs are becoming.
+<figcaption>Fig.4 - Airbnb Listing Price Distribution </figcaption><br/>
 
-If you are thinking about becoming a host, it is worth knowing what the most common property types are to see if what you can offer is unique.
+<br/>
+
+When comparing this with the listing price grouped by the median (the middle price, when price is ordered), we can see a slightly more realistic overview of Airbnb prices in Ireland. However, to my surprise, Louth has the 2nd most expensive median Airbnb listing price. Also, something else very surprising is that **South Dublin was the cheapest when listing prices were grouped by their median**. 
+
+<img src="https://user-images.githubusercontent.com/26163704/123714511-5b052c80-d86e-11eb-8637-e94b08445979.png" width=100%> <br/>
+
+<figcaption>Fig.5 - Median Listing Price per Council </figcaption><br/>
+
+<br/>
+It seems that region definitely has a part to play in determining listing price and if you're looking to shop around, I hope you've gained some insights thus far.
+
+### My second question was related to the growth of Airbnb:
+> 2. **What counties have the fewest Airbnbs and could be areas potential hosts may consider listing a property in? Also, what kind of rooms are most popular in Ireland? (and therefore be considered by potential hosts)**
+
+If you're considering becoming an Airbnb host, you might want to **consider hosting in Longford, Monaghan or Offaly.** These are the three regions with the fewest Airbnbs in Ireland and are therefore an investment opportunity, especially considering how popular Airbnb is becoming.
 
 ![property_type](https://user-images.githubusercontent.com/26163704/123715073-7c1a4d00-d86f-11eb-8836-9996b97067f7.png)
 
-My third question was all about the **what** 
+<figcaption>Fig.6 - Top 10 Property Types - Ireland </figcaption> <br/>
+
+<br/>
+Also, as a potential host, it is worth knowing what the most common property types are to see if what you can offer is unique and/or in demand. As you can see above, the overwhelming theme when it comes to the property types in Ireland is privacy and entirety, so keep that in mind if you're listing.
+
+### My third question was all about the what:
 > 3. **What features affect the listing price? And to what extent? i.e. what can YOU do to your Airbnb to increase its value?** 
 
-I was surprised to learn that for Ireland, a superhost status doesn't make much of an impact on price listing. 
+I was surprised to learn that for Ireland, a superhost status doesn't make much of an impact on price listing. Superhosts are experienced hosts who provide a shining example for other hosts, and extraordinary experiences for their guests.
 
-> Superhosts are experienced hosts who provide a shining example for other hosts, and extraordinary experiences for their guests.
+``Superhost = 0 indicates host is not a Superhost``
 
-I assumed that people would likely expect to pay more to stay in a superhost's listing but this doesn't seem to be the case as both distributions are very similar. A superhost status seems to pissbly have a slight impact on the `Review Scores Rating`, but only just.
+``Superhost = 1 indicates host is a Superhost``
 
-<img src="https://user-images.githubusercontent.com/26163704/123717052-f0ef8600-d873-11eb-8614-9f37ea7951a6.png" width=45%>
-<img src="https://user-images.githubusercontent.com/26163704/123717060-f351e000-d873-11eb-8474-5b1b793596e2.png" width=45%>
+<br/>
+<img align = "left" src="https://user-images.githubusercontent.com/26163704/123717052-f0ef8600-d873-11eb-8614-9f37ea7951a6.png" width=40%>
+
+<figcaption>Fig.7 - Price Distribution (Superhost vs Non-Superhost) </figcaption><br/>
+
+<br/>
+I assumed that people would likely expect to pay more to stay in a superhost's listing but this doesn't seem to be the case as both distributions are very similar. A superhost status seems to possibly have a slight impact on the `Review Scores Rating`, but only just. On a positive note, the average review score rating is rather high for hosts 
+in Ireland - which is encouraging as a consumer or a potential host! <br/>
+
+<br/>
+<img align = "center" src="https://user-images.githubusercontent.com/26163704/123717060-f351e000-d873-11eb-8474-5b1b793596e2.png" width=100%>
+
+<figcaption>Fig.8 - Review Score Rating Distribution (Superhost vs Non-Superhost) </figcaption><br/>
+
+<br/>
+<br/>
 
 ![bed_bath_vs_price](https://user-images.githubusercontent.com/26163704/123717532-f5686e80-d874-11eb-9a94-6fc542bb0819.png)
- - does the number of bedrooms/bathrooms affect price? 
- - ![bedrooms_vs_median_price](https://user-images.githubusercontent.com/26163704/123717562-031df400-d875-11eb-94ed-5ee2fb6e8b39.png)
+
+<figcaption>Fig.9 - Do Bedrooms and Bathrooms affect price? </figcaption><br/>
+
+<br/>
+
+As expected, the number of bedrooms and bathrooms does seem to impact the price. However, as you can see from Fig. 10, it is not always a  straight-forward increase in median price.<br/>
 
 
- - does the number of reviews/overall review score rating affect price?
- ![reviews_vs_price](https://user-images.githubusercontent.com/26163704/123717595-116c1000-d875-11eb-90c6-73524af646b8.png)
-   
-My final question was as follows:
+<img align="center" src="https://user-images.githubusercontent.com/26163704/123717562-031df400-d875-11eb-94ed-5ee2fb6e8b39.png" width="100%">
+
+<figcaption>Fig.10 - Do Bedrooms affect median listing price? </figcaption><br/>
+
+<br/>
+Interestingly, the median price for 7 bedroom listing is a lot lower than the median price for a 6 bed listing therefore it could be worth your while to filter by a range of bedrooms when browsing on Airbnb.<br/>
+
+<br/>
+<img align= "left" src="https://user-images.githubusercontent.com/26163704/123717595-116c1000-d875-11eb-90c6-73524af646b8.png">
+
+<figcaption>Fig.11 - Number of Reviews Last 3- Days/Review Score Rating vs Median Listing Price </figcaption><br/>
+ 
+ <br/>
+While there doesn't seem to be a strong relationship between review score rating/number of reviews in the last 30 days and the median price, we can clearly see a pattern in terms of superhosts having higher review score ratings than non-superhosts. We also see the message from Fig.8 echoed here again when looking at the distribution of review score ratings.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+### My final question was as follows:
 
 > 4. **Can the price of a listing be predicted? What are the most influential features in predicting price?**
 
- ![lr](https://user-images.githubusercontent.com/26163704/123717625-1f219580-d875-11eb-884f-e07240ac5114.png)
+I trained a basic linear regression model to investigate the most impactful features when it came to affecting the relative price of a listing. I won't bore you with the model details as that is not the purpose of this blog post. However, I will share with you my findings. <br/>
 
 ![hostver_impact](https://user-images.githubusercontent.com/26163704/123717675-39f40a00-d875-11eb-879f-653ed3164b66.png)
-![region_impact](https://user-images.githubusercontent.com/26163704/123717677-3bbdcd80-d875-11eb-83f0-0a3b7f76ca7e.png)
+
+<figcaption>Fig.12 - Host Verification Impact on Predicted Price </figcaption><br/>
+
+<br/>
+Host verification, especially the type of host verification used had a strong impact on relative price (both positive and negative impact as you can see). Verifying your host status using a government id or a work e-mail had a positive impact on relative price whereas verifying using facebook or manually offline had a negative impact.
+
+We unfortunately can't yet understand this relationship completely as a description of the host verification values is not available to us.
+
+![region_impact](https://user-images.githubusercontent.com/26163704/123717677-3bbdcd80-d875-11eb-83f0-0a3b7f76ca7e.png)<br/>
+
+<figcaption>Fig.13 - Region Impact on Predicted Price</figcaption><br/>
+
+<br/>
+We saw from earlier analysis that price was definitely impacted by the region. We can see in Fig.13 exactly what regions have the strongest
+positive and negative impacts. A listing being in Galway City and County Louth can add from 10-20+ dollars to the relative price whereas a listing in Wexford or Roscommon can take from 10-20+ dollars off the relative price.
+
+## The Takeaway
+
+- The pricing distribution is highly skewed, so make sure to shop around
+
+
+- The top 3 most expensive regions based on median listing price are:
+
+    1 - Kerry County Council
+    
+    2 - Louth County Council
+    
+    3 - Galway City Council
+
+
+- The 3 regions which the fewest AirBnB listings are:
+
+    1 - Longford County Council
+    
+    2 - Monaghan County Council
+    
+    3 - Offaly County Council
+
+
+- It's worth filtering by a range of bedrooms/bathrooms to get the best deal
+
+
+- Being a superhost does not seem to affect price while the hosts review rating seems to be higher when the host is a superhost.
+  
+
+- We've seen from the simple Linear Regression model that the region and the host's verification have the strongest impact on  predicting the relative price of a listing.
+  
+
+### How will YOU use these findings to your advantage?
