@@ -145,8 +145,6 @@ Interestingly, the median price for 7 bedroom listing is a lot lower than the me
 While there doesn't seem to be a strong relationship between review score rating/number of reviews in the last 30 days and the median price, we can clearly see a pattern in terms of superhosts having higher review score ratings than non-superhosts. We also see the message from Fig.8 echoed here again when looking at the distribution of review score ratings.
 
 <br/>
-<br/>
-<br/>
 ### My final question was as follows:
 
 > 4. **Can the price of a listing be predicted? What are the most influential features in predicting price?**
@@ -167,6 +165,8 @@ We unfortunately can't yet understand this relationship completely as a descript
 
 We saw from earlier analysis that price was definitely impacted by the region. We can see in Fig.13 exactly what regions have the strongest
 positive and negative impacts. A listing being in Galway City and County Louth can add from 10-20+ dollars to the relative price whereas a listing in Wexford or Roscommon can take from 10-20+ dollars off the relative price.
+
+---
 
 ## The Takeaway
 
