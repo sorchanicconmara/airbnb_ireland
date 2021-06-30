@@ -1,5 +1,7 @@
 **airbnb_ireland**
 
+<img src = "https://user-images.githubusercontent.com/26163704/123925816-2df66e00-d983-11eb-9a56-02f5b788414e.png" width="100%">
+
 # Brief Analysis of listings data for AirBnB in Ireland from March 2021. 
 #### Includes some exploratory data analysis (EDA), visualisations and modelling to attempt to answer the following:
 ---
@@ -88,3 +90,11 @@ We can see that all hosts who received 7+ ratings in the last 30 days have a rev
 We've seen from the simple Linear Regression model that the region and the host's verification have the strongest impact on predicting the price of a listing.
 
 ___
+
+### Acknowledgements
+* [GitHub Pages](https://pages.github.com)
+* [Github Pages Theme](https://jekyllrb.com/docs/themes/)
+* [Ireland's AirBnB data](http://insideairbnb.com/get-the-data.html)
+* [Data Dictionary](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=982310896)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Matplotlib Gallery](https://matplotlib.org/stable/gallery/index.html)
