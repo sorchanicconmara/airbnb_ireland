@@ -1,10 +1,12 @@
-**airbnb_ireland**
-
-<img src = "https://user-images.githubusercontent.com/26163704/123925816-2df66e00-d983-11eb-9a56-02f5b788414e.png" width="100%">
+<img src = "https://user-images.githubusercontent.com/26163704/123927620-eec91c80-d984-11eb-997c-fd8c3431626c.png" width="100%">
 
 # Brief Analysis of listings data for AirBnB in Ireland from March 2021. 
 #### Includes some exploratory data analysis (EDA), visualisations and modelling to attempt to answer the following:
 ---
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 
 #### Author: Sorcha Nic Conmara | June 2021
 
